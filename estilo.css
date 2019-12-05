@@ -32,8 +32,10 @@ header{
   height: 100px;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 2fr 1fr;
+
   justify-items: center;
   align-items: center;
+  box-shadow: 1px 2px 5px #EBEBEB;
 }
 
 .divInput i{
@@ -77,6 +79,37 @@ header{
 .blackFridayImagem{
   width: 170px;
   height: 32px;
+}
+
+.menu{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding: 10px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #575757;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
 }
 
 main{
