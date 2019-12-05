@@ -1,35 +1,96 @@
 hmtl, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #FFFFFF;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 8fr 1fr;
+  grid-template-areas: "header header"
+                       "main aside"
+                       "footer footer" 
+}
   
-  header{
-    background: blue;
-    grid-area: header;
-  }
+header{
+  background: #FFFFFF;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-area: header;
+}
+
+.containerHeader{
+  display: grid;
+  width: 100%;
+  height: 100px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.divInput i{
+  position: absolute;
+}
+
+.divInput{
+  width: 100%; 
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.iconePesquisa{
+  color: #7F8080;
+  padding-left: 130px;
+  padding-top: 32px;
+  min-width: 10px;
+}
+
+.inputPesquisa{
+  width: 596px;
+  height: 42px;
+  padding-left: 50px;
+  margin-top: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #575757;
+  background-color: #FAFCFD;
+  border-color: #E2EAF0;
+  border-width: thin;
+}
+
+::placeholder {
+  color: #8995a0;
+}
+
+.blackFridayImagem{
+  width: 170px;
+  height: 32px;
+}
+
+main{
+  background: red;
+  grid-area: main;
+}
   
-  main{
-    background: red;
-    grid-area: main;
-  }
+aside{
+  background: green;
+  grid-area: aside;
+}
   
-  aside{
-    background: green;
-    grid-area: aside;
-  }
+footer{
+  background: yellow;
+  grid-area: footer;
+}
   
-  footer{
-    background: yellow;
-    grid-area: footer;
-  }
-  
-  .container{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 20vh 70vh 10vh;
-    grid-template-areas: "header header"
-                         "main aside"
-                         "footer footer" 
-  }
