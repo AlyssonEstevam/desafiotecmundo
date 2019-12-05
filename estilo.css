@@ -1,0 +1,35 @@
+hmtl, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+  }
+  
+  header{
+    background: blue;
+    grid-area: header;
+  }
+  
+  main{
+    background: red;
+    grid-area: main;
+  }
+  
+  aside{
+    background: green;
+    grid-area: aside;
+  }
+  
+  footer{
+    background: yellow;
+    grid-area: footer;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer" 
+  }
