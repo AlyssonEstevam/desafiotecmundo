@@ -10,8 +10,8 @@ body {
 
 .container {
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 3fr 8fr 2fr;
     grid-template-areas: "header header" "main main" "footer footer";
@@ -83,14 +83,14 @@ header {
     grid-column-end: 3;
 }
 
-ul {
+.menuPrincipal {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+.liMenuPrincipal {
     float: left;
     padding: 15px;
     font-size: 15px;
@@ -100,7 +100,7 @@ li {
     color: #575757;
 }
 
-li a {
+.liMenuPrincipal a {
     float: left;
     font-size: 15px;
     font-family: Arial;
@@ -109,7 +109,7 @@ li a {
     color: #575757;
 }
 
-li a:hover {
+.liMenuPrincipal a:hover {
     color: #47A2FF;
 }
 
@@ -265,6 +265,103 @@ main {
 }
 
 footer {
-    background: yellow;
     grid-area: footer;
+}
+
+.containerFooter {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 6fr 3fr 2fr;
+    grid-template-areas: "TM1 . . . TM2 TM3" "M1 M2 M3 M4 M5 M6" "LNZN MI1 MI1 MI1 MI1 PT" "MI2 MI2 MI2 MI2 MI2 MI2";
+}
+
+.divTituloMenu1 {
+    grid-area: TM1;
+    border-style: solid;
+}
+
+.divTituloMenu2 {
+    grid-area: TM2;
+    border-style: solid;
+}
+
+.divTituloMenu3 {
+    grid-area: TM3;
+    border-style: solid;
+}
+
+.divMenu1 {
+    grid-area: M1;
+    border-style: solid;
+}
+
+.divMenu2 {
+    grid-area: M2;
+    border-style: solid;
+}
+
+.divMenu3 {
+    grid-area: M3;
+    border-style: solid;
+}
+
+.divMenu4 {
+    grid-area: M4;
+    border-style: solid;
+}
+
+.divMenu5 {
+    grid-area: M5;
+    border-style: solid;
+}
+
+.divMenu6 {
+    grid-area: M6;
+    border-style: solid;
+}
+
+.divLogoNZN {
+    grid-area: LNZN;
+    border-style: solid;
+}
+
+.divMenuInline1 {
+    grid-area: MI1;
+    border-style: solid;
+}
+
+.listaInline1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.liListaInline {
+    float: left;
+    padding: 15px;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    color: #575757;
+}
+
+.divPatente {
+    grid-area: PT;
+    border-style: solid;
+}
+
+.divMenuInline2 {
+    grid-area: MI2;
+    border-style: solid;
+}
+
+.listaInline2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
