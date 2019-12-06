@@ -170,7 +170,7 @@ main {
 
 .subtituloNoticiaMaior {
     font-family: Arial;
-    color: #1087FF;
+    color: #1086FE;
     font-weight: lighter;
     padding-left: 60px;
     padding-top: 10px;
@@ -181,6 +181,18 @@ main {
     font-size: 30px;
     padding-left: 60px;
     font-weight: bold;
+}
+
+.tituloNoticiaMaior a {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.tituloNoticiaMaior a:hover {
+    color: #1087FF;
 }
 
 .noticiaDestaque1 {
@@ -205,7 +217,7 @@ main {
     display: grid;
     font-family: Arial;
     align-self: end;
-    color: #1087FF;
+    color: #1086FE;
     font-weight: lighter;
 }
 
@@ -216,6 +228,18 @@ main {
     font-size: 18px;
     align-self: start;
     padding-top: 10px;
+}
+
+.tituloNoticiaDestaque a {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.tituloNoticiaDestaque a:hover {
+    color: #1087FF;
 }
 
 .noticiaDestaque2 {
