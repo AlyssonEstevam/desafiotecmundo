@@ -11,7 +11,7 @@ body {
 .container {
     display: grid;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 3fr 8fr 2fr;
     grid-template-areas: "header header" "main main" "footer footer";
@@ -275,61 +275,128 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 6fr 3fr 2fr;
     grid-template-areas: "TM1 . . . TM2 TM3" "M1 M2 M3 M4 M5 M6" "LNZN MI1 MI1 MI1 MI1 PT" "MI2 MI2 MI2 MI2 MI2 MI2";
+    background: #F6F8FA;
 }
 
 .divTituloMenu1 {
+    display: grid;
     grid-area: TM1;
-    border-style: solid;
+    justify-items: center;
+    align-items: center;
+    font-family: Arial;
+    color: #414141;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .divTituloMenu2 {
+    display: grid;
     grid-area: TM2;
-    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    color: #414141;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .divTituloMenu3 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
     grid-area: TM3;
-    border-style: solid;
+    font-size: 18px;
+}
+
+.tituloCupons a {
+    font-family: Arial;
+    color: #414141;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tituloCupons a:hover {
+    color: black;
+}
+
+.menuLine {
+    list-style-type: none;
+}
+
+.menuLine a {
+    list-style-type: none;
+    font-family: Arial;
+    text-decoration: none;
+    color: #414141;
+}
+
+.menuLine a:hover {
+    color: black;
 }
 
 .divMenu1 {
+    display: grid;
     grid-area: M1;
-    border-style: solid;
+    justify-items: space-between;
+    font-family: Arial;
+    color: #414141;
 }
 
 .divMenu2 {
+    display: grid;
     grid-area: M2;
-    border-style: solid;
+    justify-items: space-between;
+    font-family: Arial;
+    color: #414141;
 }
 
 .divMenu3 {
+    display: grid;
     grid-area: M3;
-    border-style: solid;
+    justify-items: space-between;
+    font-family: Arial;
+    color: #414141;
 }
 
 .divMenu4 {
+    display: grid;
     grid-area: M4;
-    border-style: solid;
+    justify-items: space-between;
+    font-family: Arial;
+    color: #414141;
 }
 
 .divMenu5 {
+    display: grid;
     grid-area: M5;
-    border-style: solid;
+    justify-items: space-between;
+    font-family: Arial;
+    color: #414141;
 }
 
 .divMenu6 {
+    display: grid;
     grid-area: M6;
-    border-style: solid;
+    justify-items: space-between;
+    font-family: Arial;
+    color: #414141;
 }
 
 .divLogoNZN {
+    display: grid;
     grid-area: LNZN;
-    border-style: solid;
+    justify-items: center;
+    align-items: center;
+    background: #E8ECEF;
 }
 
 .divMenuInline1 {
+    display: grid;
     grid-area: MI1;
-    border-style: solid;
+    justify-items: center;
+    align-items: center;
+    font-family: Arial;
+    background: #E8ECEF;
 }
 
 .listaInline1 {
@@ -337,31 +404,74 @@ footer {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: Arial;
+    display: flex;
 }
 
-.liListaInline {
-    float: left;
+.liListaInline a {
     padding: 15px;
     font-size: 15px;
     font-family: Arial;
     font-weight: bold;
     text-decoration: none;
-    color: #575757;
+    color: black;
+    font-family: Arial;
+}
+
+.liListaInline a:hover {
+    color: #1087FF;
 }
 
 .divPatente {
+    display: grid;
     grid-area: PT;
-    border-style: solid;
+    justify-items: end;
+    align-items: center;
+    font-family: Arial;
+    background: #E8ECEF;
+    row-gap: 5px;
+}
+
+.patenteLinha1 {
+    font-weight: bold;
+    font-size: 9px;
+    display: grid;
+    align-self: end;
+}
+
+.patenteLinha2 {
+    font-size: 10px;
+    display: grid;
+    align-self: start;
 }
 
 .divMenuInline2 {
     grid-area: MI2;
-    border-style: solid;
+    font-family: Arial;
+    display: grid;
+    align-items: center;
+    background: #E8ECEF;
+    justify-content: space-evenly;
 }
 
 .listaInline2 {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: Arial;
+}
+
+.liListaInline2 a {
+    padding: 15px;
+    font-size: 15px;
+    font-family: Arial;
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+}
+
+.liListaInline2 a:hover {
+    color: #1087FF;
 }
