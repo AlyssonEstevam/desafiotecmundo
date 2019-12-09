@@ -85,13 +85,10 @@ header {
 
 .menuPrincipal {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
 }
 
 .liMenuPrincipal {
-    float: left;
     padding: 15px;
     font-size: 15px;
     font-family: Arial;
@@ -101,7 +98,6 @@ header {
 }
 
 .liMenuPrincipal a {
-    float: left;
     font-size: 15px;
     font-family: Arial;
     font-weight: bold;
